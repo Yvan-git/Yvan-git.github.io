@@ -9,11 +9,16 @@ which stays private.
 ## Live
 
 - **<https://yvan-git.github.io/>**
-- **<https://framework.collabior.com/>** — the same site, on its own domain
-  (the `CNAME` file in this repository; the DNS for the domain points here)
 
 The build is pushed here by the `publish-site` workflow in the source
 repository, and published to GitHub Pages by the workflow in this repository.
+
+There is no `CNAME` file, so the site is served from this URL and the
+domain `framework.collabior.com` is left pointing wherever it is. To move
+it here, add a `CNAME` file containing `framework.collabior.com` to the root
+of this repository and point the domain's DNS at GitHub's addresses
+(`185.199.108.153`, `185.199.109.153`, `185.199.110.153`,
+`185.199.111.153`).
 
 ## Serving it somewhere else
 
